@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/G/encabezado.css"/>
+    <link rel="stylesheet" href="../../estilos/G/formulario.css"/>   
+    
+    <link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Registro</title>
+</head>
+<body>
+    <section class="sep">
+    <div class="circle"></div>
+        <header>
+            <a href="#"><img src="../../assests/MCPLSF.png" class="logo"></a>
+            <nav>
+                <ul class="arriba">
+            <li><a class="boton1" href=principalG.html>Home&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=vendedorG.html>Vendedor&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=tecnicoG.html>Tecnico&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=proveedorG.html>Proveedor&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=productoG.html>Producto&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=informesG.html>Informes&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=registroG.html>Registro&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=inventarioG.html>Inventario&nbsp&nbsp&nbsp</a></li>
+            
+            <li><a class="boton1"><i class="far fa-user"></i></a>
+                <ul>
+                    <li><a href="#">Usuario</a></li>
+                    <li><a id="BtnCerrarSesion"  href="../login.html">Cerrar sesión</a></li>
+                </ul></li>
+        </ul>
+        </nav> 
+        </header>
+    <div class="separacion" id="separacion1">
+        <div class="contenedor" id="contenedor1">
+            
+            <div class="contenedor-blanco">
+                <h3>Ingresos<br></h3>
+                <button type="button" id="mostrar1" class="mostrar" onclick="mostrarr()">Mostrar</button>
+                <button type="button" id="cerrar1" class="cerrar" onclick="cerrarr()">Cerrar</button>
+            </div>
+        </div>
+            <div class="formulario1" id="formulario1">
+                <form class="formulario-L">
+                    Id del ingreso<br>
+                    <input type="text" placeholder="Ingresa el id de ingreso" name="txtIdIG"><br>
+                    Cantidad ganada<br>
+                    <input type="text" placeholder="Ingrese la cantidad ganada" name="txtCantidadGanadaIG"><br>
+                    Fecha del ingreso<br>
+                    <input type="date" name="FechaIG"><br>
+                </form>
+            </div>
+            <div class="formulario1" id="formularioo1">
+                <form class="formulario-L">
+                    
+                </form>
+            </div>
+            <div class="botones" id="botones1">
+                <form>
+                    <input type="button" value="Crear" name="botonCrearIG">
+                    <input type="button" value="Buscar" name="botonBuscarIG">
+                    <input type="button" value="Actualizar" name="botonActualizarIG">
+                    <input type="button" value="Eliminar" name="botonEliminarIG">
+                </form>
+            </div>
+    </div>
+    
+        
+
+    <div class="separacion" id="separacion2">
+        <div class="contenedor" id="contenedor2">
+            
+            <div class="contenedor-blanco">
+                <h3>Egresos<br></h3>
+                <button type="button" id="mostrar2" class="mostrar" onclick="mostrar()">Mostrar</button>
+                <button type="button" id="cerrar2" class="cerrar" onclick="cerrar()">Cerrar</button>
+            </div>
+        </div>
+        
+        <div class="formulario2" id="formulario2">
+            <form class="formulario-L">
+                Id de egreso<br>
+                <input type="text" placeholder="Ingrese el id del egreso" name="txtIdEG"><br>
+                Cantidad descontada<br>
+                <input type="text" placeholder="Ingrese la cantidad descontada" name="txtCantidadEG"><br>
+                Fecha del egreso<br>
+                <input type="date" name="FechaEG"><br>
+            </form>
+        </div>
+        <div class="formulario2" id="formularioo2">
+            <form class="formulario-L">
+        
+            </form>
+        </div>
+        <div class="botones" id="botones2">
+            <form>
+                <input type="button" value="Crear" name="botonCrearEG">
+                <input type="button" value="Buscar" name="botonBuscarEG">
+                <input type="button" value="Actualizar" name="botonActualizarEG">
+                <input type="button" value="Eliminar" name="botonEliminarEG">
+            </form>
+        </div>
+    </div>
+
+        <div class="separacion" id="separacion3">
+            <div class="contenedor" id="contenedor3">
+            
+                <div class="contenedor-blanco">
+                    <h3>Egresos y ingresos</h3>
+                    <button type="button" id="mostrar3" class="mostrar" onclick="mmostrar()">Mostrar</button>
+                    <button type="button" id="cerrar3" class="cerrar" onclick="ccerrar()">Cerrar</button>
+                </div>
+            </div>
+            
+        <div class="formulario3" id="formulario3">
+            <form class="formulario-L">
+                Fecha de realización<br>
+                <input type="date" name="FechaRG"><br>
+                Id ingreso<br>
+                <input type="text" placeholder="Ingrese el id del ingreso" name="txtIdIG"><br>
+                Descripción de la transacción<br>
+                <input type="text" placeholder="Ingrese la descripción de la transacción" name="txtDescripcionRG"><br>
+                Id egreso<br>
+                <input type="text" placeholder="Ingrese id del egreso" name="txtIdEG"><br>
+            </form>
+        </div>
+        <div class="formulario3" id="formularioo3">
+            <form class="formulario-L">
+                
+            </form>
+        </div>
+        <div class="botones" id="botones3">
+            <form>
+                <input type="button" value="Crear" name="botonCrearRG">
+                <input type="button" value="Buscar" name="botonBuscarRG">
+                <input type="button" value="Actualizar" name="botonActualizarRG">
+                <input type="button" value="Eliminar" name="botonEliminarRG">
+            </form>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <script type="text/javascript">
+        
+        function mostrarr(){
+    document.getElementById('formulario1').style.display = 'block';
+    document.getElementById('formularioo1').style.display = 'block';
+    document.getElementById('botones1').style.display = 'block';
+    document.getElementById('mostrar1').style.display = 'none';
+    document.getElementById('cerrar1').style.display = 'block';
+    document.getElementById('separacion2').style.display = 'none';
+    
+    document.getElementById('separacion3').style.display = 'none';
+    
+    document.getElementById('separacion1').style.display = 'flex';
+    document.getElementById('contenedor1').style.marginBottom='28px';
+
+document.getElementById('formularioo1').style.marginLeft = '40px';
+
+
+document.getElementById('contenedor1').style.marginTop = '40px';
+ 
+    
+    
+}
+
+        function cerrarr(){
+    document.getElementById('formulario1').style.display = 'none';
+    document.getElementById('formularioo1').style.display = 'none';
+    document.getElementById('botones1').style.display = 'none';
+    document.getElementById('mostrar1').style.display = 'block';
+    document.getElementById('cerrar1').style.display = 'none';
+    document.getElementById('formulario2').style.display = 'none';
+    document.getElementById('botones2').style.display = 'none';
+    document.getElementById('formulario3').style.display = 'none';
+    document.getElementById('botones3').style.display = 'none';
+    document.getElementById('contenedor2').style.display = 'block';
+    document.getElementById('contenedor3').style.display = 'block';
+    document.getElementById('mostrar3').style.display = 'block';
+    document.getElementById('mostrar2').style.display = 'block';
+    document.getElementById('separacion2').style.display = 'block';
+    
+    document.getElementById('separacion3').style.display = 'block';
+    document.getElementById('contenedor1').style.margin='0px';
+            
+    
+}
+
+        
+        function mostrar(){
+    document.getElementById('formulario2').style.display = 'block';
+    document.getElementById('formularioo2').style.display = 'block';
+    document.getElementById('botones2').style.display = 'block';
+    document.getElementById('mostrar2').style.display = 'none';
+    document.getElementById('cerrar2').style.display = 'block';
+    document.getElementById('separacion2').style.display = 'flex';
+    
+    document.getElementById('separacion3').style.display = 'none';
+    
+    document.getElementById('separacion1').style.display = 'none';
+    document.getElementById('contenedor2').style.marginBottom='28px';
+
+document.getElementById('formularioo2').style.marginLeft = '40px';
+
+
+document.getElementById('contenedor2').style.marginTop = '40px';
+}
+
+        function cerrar(){
+    document.getElementById('formulario1').style.display = 'none';
+    document.getElementById('formularioo2').style.display = 'none';
+    document.getElementById('botones1').style.display = 'none';
+    document.getElementById('mostrar2').style.display = 'block';
+    document.getElementById('cerrar2').style.display = 'none';
+    document.getElementById('formulario2').style.display = 'none';
+    document.getElementById('botones2').style.display = 'none';
+    document.getElementById('formulario3').style.display = 'none';
+    document.getElementById('botones3').style.display = 'none';
+    document.getElementById('contenedor1').style.display = 'block';
+    document.getElementById('contenedor3').style.display = 'block';
+    document.getElementById('mostrar3').style.display = 'block';
+    document.getElementById('mostrar1').style.display = 'block';
+    document.getElementById('separacion1').style.display = 'block';
+    
+    document.getElementById('separacion3').style.display = 'block';
+    document.getElementById('contenedor2').style.margin='0px';
+    
+}
+ 
+        function mmostrar(){
+    document.getElementById('formulario3').style.display = 'block';
+    document.getElementById('formularioo3').style.display = 'block';
+    document.getElementById('botones3').style.display = 'block';
+    document.getElementById('mostrar3').style.display = 'none';
+    document.getElementById('cerrar3').style.display = 'block';
+    document.getElementById('separacion3').style.display = 'flex';
+    
+    document.getElementById('separacion2').style.display = 'none';
+    
+    document.getElementById('separacion1').style.display = 'none';
+    document.getElementById('contenedor3').style.marginBottom='28px';
+
+    document.getElementById('formularioo3').style.marginLeft = '40px';
+
+
+    document.getElementById('contenedor3').style.marginTop = '40px';
+
+}
+
+        function ccerrar(){
+    document.getElementById('formulario1').style.display = 'none';
+    document.getElementById('formularioo3').style.display = 'none';
+    document.getElementById('botones1').style.display = 'none';
+    document.getElementById('mostrar1').style.display = 'block';
+    document.getElementById('cerrar3').style.display = 'none';
+    document.getElementById('formulario2').style.display = 'none';
+    document.getElementById('botones2').style.display = 'none';
+    document.getElementById('formulario3').style.display = 'none';
+    document.getElementById('botones3').style.display = 'none';
+    document.getElementById('contenedor1').style.display = 'block';
+    document.getElementById('contenedor3').style.display = 'block';
+    document.getElementById('mostrar3').style.display = 'block';
+    document.getElementById('mostrar2').style.display = 'block';
+    document.getElementById('separacion1').style.display = 'block';
+    document.getElementById('contenedor3').style.margin='0px';
+    document.getElementById('separacion2').style.display = 'block';
+    
+}
+
+ </script>
+
+</body>
+</html>

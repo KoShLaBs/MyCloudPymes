@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/G/encabezado.css"/>
+    <link rel="stylesheet" href="../../estilos/G/formulario.css"/>    
+    <link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Factura</title>
+</head>
+<body >
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="../../assests/MCPLSF.png" class="logo"></a>
+            <nav>
+                <ul class="arriba">
+            <li><a class="boton1" href=principalT.html>Home&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=clienteT.html>Cliente&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=ordenservicioT.html>Orden de Servicio&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=estadoT.html>Estado ODS&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=facturaT.html>Factura&nbsp&nbsp&nbsp</a></li>
+            
+            
+            <li><a class="boton1"><i class="far fa-user"></i></a>
+                <ul>
+                    <li><a href="#">Usuario</a></li>
+                    <li><a id="BtnCerrarSesion"  href="../login.html">Cerrar sesión</a></li>
+                </ul></li>
+        </ul>
+        </nav> 
+        </header>
+
+
+    <div class="contenedor-blanco">
+        <h3>Factura</h3>
+    </div>
+        <div class="formulario-1">
+            <form class="formulario-G">
+                Id factura<br>
+                <input type="text" placeholder="Ingresar id de la facutura" name="txtIdFT"><br>
+                Id ODS<br>
+                <input type="text" placeholder="Ingrese id de la ODS" name="txtIdODS"><br>
+                Estado ODS<br>
+                <select name="estadoODS">
+                    <option value="a">En proceso</option>
+                    <option value="a">Demorado</option>
+                    <option value="a">Para entregar</option>
+                    <option value="a">Entregado</option>
+                </select>
+                
+            </form>
+        </div>
+        <div class="formulario-2">
+            <form class="formulario-G">
+                Id tecnico<br>
+                <input type="text" placeholder="Ingresar el id del tecnico" name="txtCedulaTG"><br>
+                Costo ODS<br>
+                <input type="text" placeholder="Ingrese costo de la ODS" name="txtCostoFT"><br>
+                Fecha de la factura<br>
+                <input type="date" name="txtFechaFT"><br>
+                
+            </form>
+        </div>
+        <div class="botones">
+            <form>
+                <input type="button" value="Crear" name="botonCrearFT">
+                <input type="button" value="Buscar" name="botonBuscarFT">
+                <input type="button" value="Actualizar" name="botonActualizarFT">
+                <input type="button" value="Eliminar" name="botonEliminarFT">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*.sep{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    
+    
+    align-items: center;
+    background: rgb(224, 221, 221);
+}*/
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(224, 221, 221);
+    
+}
+
+section .circle{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(120, 140, 252);
+    clip-path: circle(60% at right -10%);
+}
+
+/*.sep .circle{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(120, 140, 252);
+    clip-path: circle(60% at right -10%);
+    
+}*/
+
+.circle{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+
+
+.contenedor-blanco h3{
+    margin-top: 28px;
+    color: black;
+    font-size: 3em;
+    margin-bottom: 18px;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+.formulario-G{
+    justify-content: space-between;
+    padding: 0 30px;
+    line-height: 2.2em;
+    margin-top: 30px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+.formulario-G input{
+    align-items: center;
+    width: 120%;
+    padding: 10px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;      
+}
+
+.formulario-G select{
+    align-items: center;
+    width: 120%;
+    padding: 10px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;  
+    color: rgb(109, 108, 108);   
+}
+
+.formulario-G input .date{
+    align-items: center;
+    width: 120%;
+    padding: 10px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;      
+    color: rgb(109, 108, 108);   
+}
+
+.botones{
+    margin-top: 48px;
+    color: black;
+    font-size: 3em;
+    margin-bottom: 18px;
+    padding: 70px 0;
+    line-height: 1.4em;
+    font-weight: 700;
+    margin-right: 117px;
+    margin-left: 40px;
+}
+
+.botones form input{
+    width: 140%;
+}
+
+.botones input{
+    align-items: center;
+    width: 160%;
+    padding: 6px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;  
+    position: relative;
+}
+
+.botones input:hover{
+    background: transparent;
+    border: rgb(187, 185, 185) solid;
+    color:rgb(224, 221, 221);
+}
+
+
+.botones button{
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;  
+    position: relative;
+}
+
+.botones button:hover{
+    background: transparent;
+    border: rgb(187, 185, 185) solid;
+    color:rgb(224, 221, 221);
+}
+a { text-decoration: none; 
+    color: black;}
+
+
+::placeholder { color: rgb(109, 108, 108); }
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: rgb(109, 108, 108);
+}
+
+
+/*---------FORMULARIOS LARGOS MAS DE DOS---------------*/
+
+.separacion{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    padding: 20px 20px;
+    margin-bottom: 0; 
+    margin-top: 2%;   
+    
+}
+
+.separacion .contenedor-blanco h3{
+    margin-top: 60px;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 0px;
+    line-height: 1.4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.formulario-L{
+    margin-right: -6px;
+padding: 49px;}
+
+
+.formulario-L{
+    justify-content: space-between;
+    padding: 0 30px;
+    line-height: 2.2em;
+    margin-top: 60px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin-left: 60px;
+    width: 130%;
+}
+
+.formulario-L input{
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;      
+margin-left: 30px;}
+
+.formulario-L select{
+    align-items: center;
+    width: 120%;
+    padding: 10px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;  
+    color: rgb(109, 108, 108);   
+}
+
+.formulario-L input .date{
+    align-items: center;
+    width: 120%;
+    padding: 10px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;      
+    color: rgb(109, 108, 108);   
+}
+
+.separacion .botones{
+    display: none;
+    
+}
+
+
+.contenedor-blanco .cerrar{
+    display: none;
+    align-items: center;
+    width: 48%;
+    padding: 6px;
+    border: none;
+    background: rgb(187, 185, 185);
+    
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;  
+    position: relative;
+    
+    margin-right: 30px;
+
+    
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    
+    
+    
+    
+    margin-left: 27%;
+    margin-top: 10%;
+}
+
+.contenedor-blanco .mostrar{
+    display: block;
+    align-items: center;
+    width: 48%;
+    padding: 6px;
+    border: none;
+    background: rgb(187, 185, 185);
+    
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;  
+    position: relative;
+    
+    margin-right: 30px;
+
+    
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    
+    
+    
+    
+    margin-left: 27%;
+    margin-top: 10%;
+    
+}
+
+.separacion .formulario1{
+    display: none;
+}
+
+.separacion .formulario2{
+    display: none;
+}
+
+.separacion .formulario3{
+    display: none;
+}
+
+.separacion .botones{
+    margin-top: 28px;
+    color: black;
+    font-size: 3em;
+    
+    padding: 20px 0;
+    line-height: 1.4em;
+    font-weight: 700;
+    margin-right: -70px;   
+    margin-left: 80px;
+}
+
+
+/* FORMULARIO ORDEN DE COMPRA AJUSTE MARGIN */
+
+.contenedor-OC{
+    width: 24%;   
+}
+
+/*-----BOTONES ODS------------- */
+
+.botonesT{
+    margin-top: 48px;
+    color: black;
+    font-size: 3em;
+    margin-bottom: 18px;
+    padding: 40px 0;
+    line-height: 1.4em;
+    font-weight: 700;
+    margin-right: -50px;
+    margin-left: 30px;
+}
+
+.botonesT input{
+    align-items: center;
+    width: 48%;
+    padding: 6px;
+    border: none;
+    background: rgb(187, 185, 185);
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+    border-radius: 20px;  
+    position: relative;
+}
+
+.botonesT input:hover{
+    background: transparent;
+    border: rgb(187, 185, 185) solid;
+    color:rgb(224, 221, 221);
+}
+
+
+/*------ESTADO ODS FORM-----*/
+.formulario-11{
+    width: 22%;
+}
+
+
+
+/*-------------ALERTAS------------------*/
+
+.alert{
+    
+    background-color: bisque;
+    
+
+}

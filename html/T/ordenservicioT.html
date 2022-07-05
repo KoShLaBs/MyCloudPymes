@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/G/encabezado.css"/>
+    <link rel="stylesheet" href="../../estilos/G/formulario.css"/>   
+    
+    <link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Orden de servicio</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="../../assests/MCPLSF.png" class="logo"></a>
+            <nav>
+                <ul class="arriba">
+            <li><a class="boton1" href=principalT.html>Home&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=clienteT.html>Cliente&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=ordenservicioT.html>Orden de Servicio&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=estadoT.html>Estado ODS&nbsp&nbsp&nbsp</a></li>
+            <li><a class="boton1" href=facturaT.html>Factura&nbsp&nbsp&nbsp</a></li>
+            
+            
+            <li><a class="boton1"><i class="far fa-user"></i></a>
+                <ul>
+                    <li><a href="#">Usuario</a></li>
+                    <li><a id="BtnCerrarSesion"  href="../login.html">Cerrar sesión</a></li>
+                </ul></li>
+        </ul>
+        </nav> 
+        </header>
+        
+    <div class="contenedor-OC">
+        
+        <div class="contenedor-blanco">
+            <h3>Orden de servicio</h3>
+        </div>
+    </div>
+        <div class="formulario-1" id="formularioo1">
+            <form class="formulario-G">
+                Id ODS<br>
+                <input type="text" placeholder="Ingrese id de la ODS" name="txtIdODS"><br>
+                Cedula cliente<br>
+                <input type="text" placeholder="Ingresar la cedula del cliente" name="txtCedulaCV"><br>
+                Descripcion ODS<br>
+                <input type="text" placeholder="Ingrese la descripcion" name="txtDescripcionODS"><br>
+                Comentarios<br>
+                <input type="text" placeholder="Ingrese comentarios" name="txtComentariosODS"><br>
+                Fecha ingreso<br>
+                <input type="date"  name="txtFechaIODS"><br>
+            </form>
+        </div>
+        <div class="formulario-2">
+            <form class="formulario-G"id="formulario1">
+                Nombre cliente<br>
+                <input type="text" placeholder="Ingresar del cliente" name="txtNombreCV"><br>
+                IMEI<br>
+                <input type="text" placeholder="Ingresa el IMEI" name="txtImeiODS"><br>
+                Referencias<br>
+                <input type="text" placeholder="Ingrese las referencias" name="txtReferenciasODS"><br>
+                Observaciones<br>
+                <input type="text" placeholder="Ingrese las observaciones" name="txtObservacionesODS"><br>
+                Fecha entrega<br>
+                <input type="date"  name="txtFechaEODS"><br>
+            </form>
+        </div>
+        <div class="formulario-3" id="formulari1">
+            <form class="formulario-G">
+                Prende<br>
+                <select name="selectODS">
+                    <option value="a">Si</option>
+                    <option value="a">No</option>
+                </select>
+                Memoria<br>
+                <select name="selectODS">
+                    <option value="a">Si</option>
+                    <option value="a">No</option>
+                </select>
+                Bateria<br>
+                <select name="selectODS">
+                    <option value="a">Si</option>
+                    <option value="a">No</option>
+                </select>
+                SIM<br>
+                <select name="selectODS">
+                    <option value="a">Si</option>
+                    <option value="a">No</option>
+                </select>
+                Contraseña<br>
+                <input type="text" placeholder="Ingrese la contraseña" name="txtContraseñaODS"><br>
+            </form>
+        </div>
+        <div class="botonesT">
+            <form>
+                <input type="button" value="Crear" name="botonCrearODS">
+                <input type="button" value="Buscar" name="botonBuscarODS">
+                <input type="button" value="Actualizar" name="botonActualizarODS">
+                <input type="button" value="Eliminar" name="botonEliminarODS">
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <script type="text/javascript">
+    
+
+    </script>
+</body>
+</html>

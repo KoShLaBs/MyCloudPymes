@@ -1,0 +1,55 @@
+.videoo{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  width: 100%;
+    z-index: -1;
+    
+    
+}
+
+
+.color{
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(8, 37, 134, 0.74);
+ 
+    opacity: 0.4;
+}
+
+
+.cajita{
+   
+    z-index: 1;
+    
+    position: relative;
+
+}
+
+@media (min-aspect-ratio: 16/9){
+    .videoo{
+        width: 100%;
+        height: auto;
+    }
+    .color{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9){
+    .videoo{
+        width: auto;
+        height: 100%;
+    }
+    .color{
+        width: auto;
+        height: 100%;
+}
+}
